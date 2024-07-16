@@ -1,0 +1,225 @@
+:root {
+  --primary-color: #5300c8;
+  --secondary-color: #03318c;
+
+  --black-200: #020202;
+  --black-300: #333333;
+  --black-400: #1f1e31;
+  --black-500: #555555;
+  --gray-100: #888888;
+
+  --color-white: #fff;
+  --color-background: #f7f7f7;
+  --color-text: #141414;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  display: grid;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: "Fira Sans", Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-text);
+}
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* CABEÇALHO */
+.cabecalho {
+  background-color: var(--primary-color);
+  padding: 17px;
+}
+.cabecalho-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 60px 40px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* PRODUTOS */
+.produtos {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px;
+  gap: 40px;
+}
+.produtos__titulo {
+  text-transform: uppercase;
+  font-size: 32px;
+  padding: 19px 0px;
+}
+.produtos__pratileira-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.produtos__pratileira__item {
+  background-color: var(--primary-color);
+  padding: 10px;
+  border: 3px solid black;
+  border-radius: 10px;
+  display: grid;
+  gap: 10px;
+}
+.produtos__pratileira__item__nome {
+  font-size: 15px;
+  color: var(--color-white);
+}
+
+.produtos__pratileira__item__imagem {
+  width: 176px;
+  height: 174px;
+  object-fit: cover;
+}
+.produtos__pratileira__item__preco-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.produtos__pratileira__item__preco__valor {
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--color-white);
+}
+.produtos__pratileira__item__preco__botao {
+  background-color: transparent;
+  border: none;
+}
+.produtos__pratileira__item__preco__botao:hover {
+  cursor: pointer;
+}
+
+/* ADICIONAR PRODUTO */
+.addProduto {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px;
+  gap: 40px;
+}
+.addProduto__titulo {
+  text-transform: uppercase;
+  font-size: 32px;
+  text-align: center;
+}
+.addProduto__form {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.addProduto__form__nome,
+.addProduto__form__valor,
+.addProduto__form__imagem {
+  width: 350px;
+  height: 58px;
+  border: 3px solid var(--secondary-color);
+  border-radius: 30px;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--secondary-color);
+}
+.addProduto__form__nome::placeholder,
+.addProduto__form__valor::placeholder,
+.addProduto__form__imagem::placeholder {
+  color: var(--secondary-color);
+}
+.addProduto__form__nome:focus,
+.addProduto__form__valor:focus,
+.addProduto__form__imagem:focus {
+  /* border: 0 none #fff; */
+  border: 3px solid var(--secondary-color);
+  overflow: hidden;
+  outline: none;
+}
+
+.addProduto__form__botao-flex {
+  display: flex;
+  justify-content: space-evenly;
+}
+.addProduto__form__botao__guardar {
+  padding: 22px 44px;
+  border: 3px solid var(--secondary-color);
+  border-radius: 15px;
+  background-color: var(--secondary-color);
+  color: var(--color-white);
+  font-size: 20px;
+}
+.addProduto__form__botao__limpar {
+  padding: 22px 44px;
+  border: 3px solid var(--secondary-color);
+  border-radius: 15px;
+  background-color: var(--color-white);
+  color: var(--secondary-color);
+  font-size: 20px;
+}
+
+.rodape {
+  background-color: var(--primary-color);
+  display: grid;
+  justify-content: center;
+  padding: 32px;
+}
+
+.rodape-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
+}
+
+.rodape-container h4,
+span {
+  color: #fff;
+  font-size: 16px;
+}
+
+@media (max-width: 1015px) {
+  .produtos,
+  .addProduto {
+    padding: 40px 10px;
+  }
+}
+
+@media (max-width: 900px) {
+  main {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0px;
+  }
+}
+@media (max-width: 445px) {
+  .produtos__pratileira-flex {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}

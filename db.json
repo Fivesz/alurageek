@@ -1,0 +1,58 @@
+{
+  "produtos": [
+    {
+      "id": "0d41",
+      "nome": "Placa de Vídeo",
+      "imagem": "https://www.gamevicio.com/static/imagens_up/big/111/asus-apresenta-radeon-rx-6600-dual-v3-110069.webp",
+      "valor": "1500"
+    },
+    {
+      "id": "31d0",
+      "nome": "Controle Machenike G5Pro",
+      "imagem": "https://www.gamevicio.com/static/imagens_up/big/110/analise-controle-machenike-g5-pro-109940.webp",
+      "valor": "299"
+    },
+    {
+      "id": "aa18",
+      "nome": "Nintendo Switch",
+      "imagem": "https://www.gamevicio.com/static/imagens_up/big/111/switch-e-o-console-da-nintendo-com-maior-tempo-de-vida-sem-ser-substituido-110675.webp",
+      "valor": "1999"
+    },
+    {
+      "id": "f559",
+      "nome": "Xbox Series S e X",
+      "imagem": "https://www.gamevicio.com/static/imagens_up/big/24/os-xbox-series-x-s-incluem-indicadores-tateis-encima-de-suas-portas-traseiras-para-auxiliar-as-pessoas-cegas-023584.webp",
+      "valor": "5000"
+    },
+    {
+      "id": "6b16",
+      "nome": "PS4",
+      "imagem": "https://www.gamevicio.com/static/imagens_up/big/111/funcionario-da-amd-revela-que-o-ps4-ajudou-a-empresa-a-evitar-a-falencia-110352.webp",
+      "valor": "1500"
+    },
+    {
+      "id": "c71b",
+      "nome": "Gamesir X4",
+      "imagem": "https://www.gamevicio.com/static/imagens_up/big/111/analise-gamesir-x4-aileron-controle-mobile-analogicos-de-hall-effects-110039.webp",
+      "valor": "250"
+    },
+    {
+      "id": "fca3",
+      "nome": "Gamesir G8",
+      "imagem": "https://www.gamevicio.com/static/imagens_up/big/102/analise-gamesir-g8-galileo-101742.jpg",
+      "valor": "199"
+    },
+    {
+      "id": "0497",
+      "nome": "AirPods Pro 2 generation",
+      "imagem": "https://www.gamevicio.com/static/imagens_up/big/97/analise-airpods-pro-2nd-generation-096060.jpg",
+      "valor": "2000"
+    },
+    {
+      "id": "a8b6",
+      "nome": "Microfone Maono PD400X",
+      "imagem": "https://www.gamevicio.com/static/imagens_up/big/90/analise-microfone-dinamico-maono-pd400x-089266.jpg",
+      "valor": "759"
+    }
+  ]
+}
